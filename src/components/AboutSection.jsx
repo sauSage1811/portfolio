@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { GraduationCap, MapPin, Mail, Briefcase, Award, Calendar, Star } from 'lucide-react';
 import { personalInfo, experiences } from '../data/portfolio';
+import avatarImage from '../assets/avatar.jpg';
 
 function AnimatedNumber({ value, suffix = '' }) {
   const ref = useRef(null);
@@ -88,7 +89,7 @@ export default function AboutSection() {
             {/* Avatar */}
             <div className="relative w-24 h-24 mx-auto mb-6">
               <img
-                src="/src/assets/avatar.jpg"
+                src={avatarImage}
                 alt={personalInfo.name}
                 className="w-24 h-24 rounded-2xl object-cover shadow-2xl shadow-indigo-500/30 ring-2 ring-indigo-500/40"
               />
