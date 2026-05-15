@@ -1,4 +1,4 @@
-# Portfolio - Nguyen Van An
+# Portfolio - Nguyen Thanh Dai Son
 
 Personal portfolio website built with React + Vite + Tailwind CSS v4 + Framer Motion.
 
