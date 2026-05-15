@@ -135,7 +135,7 @@ export default function AboutSection() {
                 Giới thiệu
               </h3>
               <p className="text-slate-400 leading-relaxed text-sm md:text-base">
-                Xin chào! Mình là <span className="text-indigo-300 font-medium">{personalInfo.name}</span>, sinh viên năm 4 ngành Công nghệ Thông tin tại{' '}
+                Xin chào! Mình là <span className="text-indigo-300 font-medium">{personalInfo.name}</span>, sinh viên năm 2 ngành Công nghệ Thông tin tại{' '}
                 <span className="text-cyan-400 font-medium">{personalInfo.universityShort}</span>. Mình có niềm đam mê mãnh liệt với việc xây dựng các ứng dụng web hiện đại, từ thiết kế giao diện đẹp mắt đến kiến trúc backend mạnh mẽ.
               </p>
               <p className="text-slate-400 leading-relaxed text-sm md:text-base mt-3">
