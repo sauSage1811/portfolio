@@ -25,7 +25,7 @@ function LoadingScreen() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          {'<VA />'}
+          {'<DS />'}
         </motion.div>
         <motion.div
           className="flex items-center gap-2 justify-center"
@@ -81,9 +81,18 @@ function ScrollProgress() {
 }
 
 export default function App() {
+  const [showLoading, setShowLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowLoading(false), 2100);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      <LoadingScreen />
+      <AnimatePresence>
+        {showLoading && <LoadingScreen />}
+      </AnimatePresence>
       <div className="min-h-screen" style={{ backgroundColor: '#0f172a' }}>
         <ScrollProgress />
         <Navbar />

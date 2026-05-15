@@ -218,7 +218,7 @@ export default function ProjectsSection() {
           className="text-center mt-12"
         >
           <motion.a
-            href={`https://github.com/nguyenvanan`}
+            href={`https://github.com/sauSage1811`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 glass rounded-2xl border border-indigo-500/30 text-slate-300 hover:text-white text-sm font-medium transition-all"

@@ -87,9 +87,11 @@ export default function AboutSection() {
           >
             {/* Avatar */}
             <div className="relative w-24 h-24 mx-auto mb-6">
-              <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-indigo-500 via-violet-500 to-cyan-500 flex items-center justify-center text-4xl font-black text-white shadow-2xl shadow-indigo-500/30">
-                VA
-              </div>
+              <img
+                src="/src/assets/avatar.jpg"
+                alt={personalInfo.name}
+                className="w-24 h-24 rounded-2xl object-cover shadow-2xl shadow-indigo-500/30 ring-2 ring-indigo-500/40"
+              />
               <span className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-green-400 border-2 border-[#0f172a]" />
             </div>
 

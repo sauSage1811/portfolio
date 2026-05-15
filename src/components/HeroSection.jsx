@@ -26,8 +26,10 @@ function TypewriterText() {
     } else if (deleting && displayed.length > 0) {
       timer = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 40);
     } else if (deleting && displayed.length === 0) {
-      setDeleting(false);
-      setIdx((i) => (i + 1) % TITLES.length);
+      timer = setTimeout(() => {
+        setDeleting(false);
+        setIdx((i) => (i + 1) % TITLES.length);
+      }, 40);
     }
     return () => clearTimeout(timer);
   }, [displayed, deleting, idx]);

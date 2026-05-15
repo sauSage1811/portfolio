@@ -12,7 +12,7 @@ const socialLinks = [
     icon: <GithubIcon size={20} />,
     color: '#f0f6fc',
     bg: 'from-slate-700 to-slate-600',
-    username: '@nguyenvanan',
+    username: '@sauSage1811',
   },
   {
     id: 'linkedin',
@@ -21,7 +21,7 @@ const socialLinks = [
     icon: <LinkedinIcon size={20} />,
     color: '#0A66C2',
     bg: 'from-blue-700 to-blue-600',
-    username: 'in/nguyenvanan',
+    username: 'in/sausage',
   },
   {
     id: 'facebook',
@@ -30,7 +30,7 @@ const socialLinks = [
     icon: <FacebookIcon size={20} />,
     color: '#1877F2',
     bg: 'from-blue-600 to-blue-500',
-    username: '/nguyenvanan',
+    username: '/Ntds.Hn206',
   },
   {
     id: 'instagram',
@@ -39,7 +39,7 @@ const socialLinks = [
     icon: <InstagramIcon size={20} />,
     color: '#E1306C',
     bg: 'from-pink-600 to-orange-500',
-    username: '@nguyenvanan',
+    username: '@dsausage_',
   },
 ];
 
@@ -84,8 +84,15 @@ export default function ContactSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    // Simulate sending (replace with actual API call / EmailJS / FormSubmit)
-    await new Promise((r) => setTimeout(r, 1500));
+
+    const subject = encodeURIComponent(form.subject.trim());
+    const body = encodeURIComponent(
+      `Họ và tên: ${form.name.trim()}\nEmail: ${form.email.trim()}\n\n${form.message.trim()}`
+    );
+
+    window.location.href = `mailto:${personalInfo.email}?subject=${subject}&body=${body}`;
+
+    await new Promise((r) => setTimeout(r, 500));
     setStatus('success');
     setForm({ name: '', email: '', subject: '', message: '' });
     setTimeout(() => setStatus(null), 4000);

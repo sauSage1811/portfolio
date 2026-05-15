@@ -56,7 +56,7 @@ export default function Navbar() {
           className="font-bold text-xl font-mono"
           whileHover={{ scale: 1.05 }}
         >
-          <span className="gradient-text">{'<VA />'}</span>
+          <span className="gradient-text">{'<DS />'}</span>
         </motion.a>
 
         {/* Desktop Nav */}
@@ -90,7 +90,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <motion.a
-          href="mailto:nguyenvanan@email.com"
+          href="mailto:Tipsnowntds.206@gmail.com"
           className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-sm font-medium transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/30"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -128,7 +128,7 @@ export default function Navbar() {
                 </button>
               ))}
               <a
-                href="mailto:nguyenvanan@email.com"
+                href="mailto:Tipsnowntds.206@gmail.com"
                 className="mt-2 px-4 py-3 bg-indigo-600 text-white rounded-xl text-sm font-medium text-center"
               >
                 Thuê tôi 🚀

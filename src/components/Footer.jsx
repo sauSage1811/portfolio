@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start gap-2">
-            <span className="text-2xl font-bold font-mono gradient-text">{'<VA />'}</span>
+            <span className="text-2xl font-bold font-mono gradient-text">{'<DS />'}</span>
             <p className="text-slate-500 text-xs text-center md:text-left">
               {personalInfo.name} · {personalInfo.universityShort}
             </p>
