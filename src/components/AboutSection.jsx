@@ -116,7 +116,7 @@ export default function AboutSection() {
             <div className="mt-6 grid grid-cols-2 gap-3">
               {[
                 { label: 'Dự án', value: '5+' },
-                { label: 'Năm học', value: '4th' },
+                { label: 'Năm học', value: '2th' },
               ].map((stat) => (
                 <div key={stat.label} className="bg-[#0f172a]/60 rounded-xl p-3 text-center">
                   <div className="text-xl font-bold text-white">{stat.value}</div>
