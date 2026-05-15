@@ -1,0 +1,3 @@
+/* _redirects - Required for Netlify SPA routing */
+/* All routes redirect to index.html */
+/*    /index.html   200
