@@ -80,7 +80,7 @@ export const projects = [
      category: 'web',
      tags: ['React', 'Vite', 'Supabase', 'Tailwind CSS', 'Recharts'],
      github: 'https://github.com/sauSage1811/Student-Expense-Tracker',
-     demo: '',
+     demo: 'https://student-expense-tracker-theta.vercel.app/',
      featured: false,
      gradient: 'from-indigo-500 to-emerald-500',
      icon: '💰',
